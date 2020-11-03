@@ -1,0 +1,37 @@
+<style>
+    .card{
+      margin-top: 30px;
+    }
+  
+    .card-header{
+      text-align: center;
+      border-bottom: 5px solid #c40101;
+      background-color: #2835a8;
+      
+    }
+  </style>
+  
+  <div class="container">
+  
+    <div class="row">
+    
+    <div class="col-md-6" *ngFor="let usuario of User">
+    
+    <div class="card">
+    <div class="card-header">
+    <strong>{{usuario.username}}</strong>
+    </div>
+    <div class="card-body">
+    <h5 class="card-title">Nombre: {{usuario.name}}</h5>
+    <p class="card-text"> E-mail: {{usuario.email}} </p>
+    <p class="card-text"> Teléfono: {{usuario.phone}} </p>
+    <p class="card-text"> Sitio Web: {{usuario.website}} </p>
+    <a href="#" class="btn btn-outline-danger">Mas informacion</a>
+    <a href="#" class="btn btn-outline-secondary">Eliminar</a>
+    </div>
+    </div>
+    
+    
+    </div>
+    </div>
+    </div>
